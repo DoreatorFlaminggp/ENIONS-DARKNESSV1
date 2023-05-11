@@ -34,7 +34,7 @@ CYAN+f"""
 ╚══════╝╚═╝░░╚══╝╚═╝░╚════╝░╚═╝░░╚══╝╚═════╝░
 {RESET}Waktu Tempuh:{YELLOW}03:28{RESET}
 Name Tools {YELLOW}ENIONS•PLANET✓✓✓
-============================================
+=======================================
 {RESET}Create Tanggal: {RED}11/{YELLOW}05/{GREEN}2023{RESET}
 Pembuat Tolls: {YELLOW}ENIONS{GREEN}PLANET{YELLOW}✓✓✓
 """)
