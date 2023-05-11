@@ -60,6 +60,8 @@ while True:
         port==15000000
         ping = ping + 1
         ping==15000000
+        random = random + 1
+        random==15000000
         print("\033[1;91mHas Been Attack ====> \033[1;32m%s \033[1;91m Has Been Sent Packet to =====> \033[1;32m%s \033[1;91mHas Been Attack Port =====> \033[1;32m%s " % (sent, ip, port))
 
 print("\033[1;92mAttack finished\033[0m")
