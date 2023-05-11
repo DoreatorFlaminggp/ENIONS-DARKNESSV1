@@ -4,7 +4,7 @@ if __name__=='__main__':
         parser=ArgumentParser()
         parser.add_argument('METHOD',help='The method to be used',nargs='?')
         parser.add_argument('TARGET',help='Target host',nargs='?')
-        parser.add_argument('PORT',help='Target
+        parser.add_argument('PORT',help='Target port',nargs='?')
         parser.add_argument('THREADS',help='Number of threads',nargs='?')
         parser.add_argument('COUNT',help='Number of packets that can be sent',nargs='?')
         parser.add_argument('NOANSI',help='If the colors have an error, the value in this argument must be True',nargs='?')
