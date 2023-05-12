@@ -12,8 +12,6 @@ N = '\033[0m'
 white = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 K_ibytes = random._urandom(35526)
 K_ibytes = random._urandom(35512)
-K_ibytes = random._urandom(65500)
-K_ibytes = random._urandom(11133438)
 
 os.system("clear")
 
