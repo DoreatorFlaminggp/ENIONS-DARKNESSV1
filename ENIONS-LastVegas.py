@@ -9,7 +9,7 @@ B = '\033[1m'
 R = '\033[31m'
 N = '\033[0m'
 
-white = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+white = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.SOCK_STREAM)
 bytes = random._urandom(35516)
 bytes = random._urandom(35512)
 
