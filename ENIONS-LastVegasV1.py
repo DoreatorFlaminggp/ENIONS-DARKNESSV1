@@ -4,6 +4,7 @@ import os
 import random
 import time
 import sys
+
 B = '\033[1m'
 R = '\033[31m'
 N = '\033[0m'
